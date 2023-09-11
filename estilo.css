@@ -1,0 +1,112 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #000080, #000033); /* Fondo degradado azul oscuro */
+    color: white; /* Color de texto blanco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column; /* Centrar contenido verticalmente */
+}
+
+.container {
+    background-color: rgba(199, 177, 199, 0.8); /* Fondo morado */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Estilos para TODOAPP */
+h1 {
+    margin-top: 0;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.enter-link {
+    display: block;
+    background-color: purple; /* Fondo morado */
+    color: white; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    text-decoration: none; /* Quita el subrayado */
+    margin-top: 10px; /* Espacio desde arriba */
+}
+
+.enter-link:hover {
+    background-color: #800080; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para la lista de tareas */
+.list-container {
+    border: 1px dashed #333;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+.task-item {
+    margin: 8px 0;
+}
+
+/* Estilos para los enlaces en la esquina superior derecha */
+.top-links {
+    position: fixed;
+    top: 10px; /* Alineación desde la parte superior */
+    right: 10px;
+}
+
+.top-links a {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px; /* Separación entre los enlaces */
+}
+
+.top-links a:last-child {
+    margin-right: 0; /* Elimina la separación del último enlace */
+}
+
+.delete-button {
+    background-color: transparent; /* Fondo transparente */
+    color: red; /* Texto rojo */
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+    margin-left: 10px; /* Separación entre botones */
+}
+
+.delete-button:hover {
+    background-color: transparent; /* Mantener el fondo transparente al pasar el mouse */
+    color: darkred; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilos para los enlaces en la esquina inferior derecha */
+.bottom-links {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.bottom-links a {
+    text-decoration: none;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.bottom-links a:last-child {
+    margin-bottom: 0;
+}
